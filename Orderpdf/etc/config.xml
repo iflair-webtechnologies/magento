@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <IFlair_Orderpdf>
+            <version>0.1.0</version>
+        </IFlair_Orderpdf>
+    </modules>
+  <!-- For order PDF -->  
+  <admin>
+      <routers>
+            <adminhtml>     
+            <use>admin</use>           
+                <args>
+                    <modules>
+                        <IFlair_Orderpdf before="Mage_Adminhtml">IFlair_Orderpdf</IFlair_Orderpdf>
+                    </modules>                    
+                </args>
+            </adminhtml>
+      </routers>
+  </admin>
+   
+</config> 
